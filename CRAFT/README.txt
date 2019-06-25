@@ -1,4 +1,14 @@
 
+This repository includes the hardware designs of CRAFT cipher:
+
+Christof Beierle, Gregor Leander, Amir Moradi, Shahram Rasoolzadeh:
+CRAFT: Lightweight Tweakable Block Cipher with Efficient Protection Against DFA Attacks. 
+IACR Trans. Symmetric Cryptol. 2019(1): 5-45 (2019)
+
+https://doi.org/10.13154/tosc.v2019.i1.5-45
+
+----------------------------------------------------------------------------------------------------------------------
+
 There are 6 folders for the VHDL source code of different implementations of CRAFT. 
 Apart from the unprotected implementation, all other designs MUST be synthesized by "keeping the hierarchy".
 Otherwise, no fault-detection and no protection against SCA is guaranteed.
@@ -13,13 +23,13 @@ The main module (in all variants) has 2 generics:
 
 The folders:
 
-* CRAFT_no_protection
+* 1-CRAFT_no_protection
 
   No protection against SCA and fault detection is integrated into the design.
 
 ----------------------------------------------------------------------------------------------------------------------
 
-* CRAFT_red1,2,3
+* 2-CRAFT_red1,2,3
 
   Fault-detection facility is added to the design for redundancy size < 4.
   In addition to withTweak and withDec, the main module has 4 other generics:
@@ -35,7 +45,7 @@ The folders:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-* CRAFT_red4
+* 3-CRAFT_red4
 
   Fault-detection facility is added to the design for redundancy size = 4.
   In addition to withTweak and withDec, the main module has 3 other generics:
@@ -49,7 +59,7 @@ The folders:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-* CRAFT_TI
+* 4-CRAFT_TI
  
   SCA-protected design by means of Threshold Implementation with 3 shares.
   In addition to withTweak and withDec, the main module has 1 other generic:
@@ -59,7 +69,7 @@ The folders:
                       
 ----------------------------------------------------------------------------------------------------------------------
 
-* CRAFT_TI_red1,2,3
+* 5-CRAFT_TI_red1,2,3
 
   SCA-protected design by means of Threshold Implementation with 3 shares.
   Fault-detection facility is also added to the design for redundancy size < 4.
@@ -79,7 +89,7 @@ The folders:
 
 ----------------------------------------------------------------------------------------------------------------------
 
-* CRAFT_TI_red4
+* 6-CRAFT_TI_red4
 
   SCA-protected design by means of Threshold Implementation with 3 shares.
   Fault-detection facility is added to the design for redundancy size = 4.
