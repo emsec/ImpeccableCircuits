@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.Functions.all;
 
-- -Red_size     : 1 => FL: 0110100110010110
+-- Red_size     : 1 => FL: 0110100110010110
 -- Red_size     : 2 => FL: 0132231032011023
 -- Red_size     : 3 => FL: 0374562165123047
 
