@@ -2,7 +2,7 @@
 -- COMPANY:		Ruhr University Bochum, Embedded Security
 -- AUTHOR:		https://doi.org/10.13154/tosc.v2019.i1.5-45 
 ----------------------------------------------------------------------------------
--- Copyright (c) 2019, Christof Beierle, Gregor Leander, Amir Moradi, Shahram Rasoolzadeh 
+-- Copyright (c) 2019, Amir Moradi 
 -- All rights reserved.
 
 -- BSD-3-Clause License

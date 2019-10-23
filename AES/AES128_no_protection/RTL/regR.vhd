@@ -2,7 +2,7 @@
 -- COMPANY:		Ruhr University Bochum, Embedded Security
 -- AUTHOR:		https://eprint.iacr.org/2018/203
 ----------------------------------------------------------------------------------
--- Copyright (c) 2019, Anita Aghaie, Amir Moradi, Aein Rezaei Shahmirzadi
+-- Copyright (c) 2019, Amir Moradi, Aein Rezaei Shahmirzadi
 -- All rights reserved.
 
 -- BSD-3-Clause License

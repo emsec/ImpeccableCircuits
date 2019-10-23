@@ -2,7 +2,7 @@
 -- COMPANY:		Ruhr University Bochum, Embedded Security
 -- AUTHOR:		https://eprint.iacr.org/2018/203
 ----------------------------------------------------------------------------------
--- Copyright (c) 2019, Anita Aghaie, Amir Moradi, Aein Rezaei Shahmirzadi
+-- Copyright (c) 2019, Anita Aghaie, Amir Moradi
 -- All rights reserved.
 
 -- BSD-3-Clause License
@@ -33,9 +33,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.Functions.all;
 
--- Red_size     : 1 => FL: 0110100110010110
--- Red_size     : 2 => FL: 0132231032011023
--- Red_size     : 3 => FL: 0374562165123047
+-- Red_size     : 1 => LF: 0110100110010110
+-- Red_size     : 2 => LF: 0132231032011023
+-- Red_size     : 3 => LF: 0374562165123047
 
 -- TweakeySize  : 1 =>  64-bit key
 -- TweakeySize  : 2 => 128-bit key

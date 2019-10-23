@@ -2,7 +2,7 @@
 -- COMPANY:		Ruhr University Bochum, Embedded Security
 -- AUTHOR:		https://doi.org/10.13154/tosc.v2019.i1.5-45 
 ----------------------------------------------------------------------------------
--- Copyright (c) 2019, Christof Beierle, Gregor Leander, Amir Moradi, Shahram Rasoolzadeh 
+-- Copyright (c) 2019, Amir Moradi 
 -- All rights reserved.
 
 -- BSD-3-Clause License
@@ -36,9 +36,9 @@ use work.functions.all;
 -- withTweak : 0/1 (whether 64-bit Tweak is taken into account)
 -- withDec   : 0/1 (whether both encryption and decryption should be realzied)
 
--- Red_size     : 1 => FL: 0110100110010110
--- Red_size     : 2 => FL: 0132231032011023
--- Red_size     : 3 => FL: 0374562165123047
+-- Red_size     : 1 => LF: 0110100110010110
+-- Red_size     : 2 => LF: 0132231032011023
+-- Red_size     : 3 => LF: 0374562165123047
 
 -- MultiVariate : 0 => Univariate   adversary model
 -- MultiVariate : 1 => Multivariate adversary model
