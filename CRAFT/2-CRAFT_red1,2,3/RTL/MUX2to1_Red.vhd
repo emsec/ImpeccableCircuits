@@ -34,7 +34,7 @@ USE IEEE.NUMERIC_STD.ALL;
 
 ENTITY MUX2to1_Red IS
 	GENERIC (size    : POSITIVE;
-	         LFTable : STD_LOGIC_VECTOR(2047 downto 0));
+	         LFTable : STD_LOGIC_VECTOR(63 downto 0));
 	PORT ( sel 	: IN  STD_LOGIC_VECTOR(size-1 downto 0);
 			 D0   : IN  STD_LOGIC;
 			 D1 	: IN  STD_LOGIC;
@@ -46,8 +46,8 @@ ARCHITECTURE behavioral OF MUX2to1_Red IS
 	type S_Array is array (0 to size, 0 to (2**size)-1) of STD_LOGIC;
 	signal S : S_Array;	
 	
-	constant LF0			 : NATURAL := to_integer(unsigned(LFTable(2047 downto 2040)));
-	constant LF1			 : NATURAL := to_integer(unsigned(LFTable(2039 downto 2039-7)));
+	constant LF0			 : NATURAL := to_integer(unsigned(LFTable(63 downto 60)));
+	constant LF1			 : NATURAL := to_integer(unsigned(LFTable(59 downto 56)));
 
 BEGIN
 
