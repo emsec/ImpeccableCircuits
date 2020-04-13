@@ -62,18 +62,19 @@ module Cipher_tb;
 		// Wait 100 ns for global reset to finish
 		#100;
       rst = 0;
-		@(negedge done) begin
-		
-			#5;
+		@(posedge done) begin
+			@(negedge clk) begin
 			
-			if(OutputData == 128'h320b6a19978511dcfb09dc021d842539) begin
-				$write("------------------PASS---------------\n");
+				
+				if(OutputData == 128'h320b6a19978511dcfb09dc021d842539) begin
+					$write("------------------PASS---------------\n");
+				end
+				else begin
+					$write("\------------------FAIL---------------\n");
+					$write("%x\n%x\n",OutputData,128'h320b6a19978511dcfb09dc021d842539);
+				end
+				$stop;
 			end
-			else begin
-				$write("\------------------FAIL---------------\n");
-				$write("%x\n%x\n",OutputData,128'h320b6a19978511dcfb09dc021d842539);
-			end
-			$stop;
 		end
 		
 
